@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials</title>
+    <script src="https://kit.fontawesome.com/cc76fba736.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <style>
+       * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Times New Roman', Times, serif;
+       }
+       nav{
+        background-color: #2196f3;
+       }
+       nav ul{
+        list-style: none;
+        display: flex;
+        justify-content: center;
+    }
+    nav ul li{
+        margin: 10px;
+    }
+    nav ul li a{
+        color: #000;
+        text-decoration: none;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    nav ul li a:hover{
+        background-color: #2c677c;
+        transition: 0.4s ease;
+
+    }
+       section {
+        position: relative;
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #2196f3;
+        overflow: hidden;
+       }
+       
+       .testimonial {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+        text-align: center;
+        max-width: 300px;
+        margin: 0 auto;
+       }
+       
+       .testimonial img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-bottom: 10px;
+       }
+       
+       .testimonial p {
+        font-size: 16px;
+        margin-bottom: 10px;
+       }
+       
+       .testimonial .author {
+        font-weight: bold;
+        font-size: 14px;
+       }
+       h3{
+        color: white;
+        font-size: 40px;
+        text-align: center;
+        background-color: #2196f3;
+       }
+    </style>
+</head>
+<body>
+    <h3>Slide to see more</h3>
+    <nav>
+        <ul>
+            <li><a href="/work.html">Preview</a></li>
+            <li><a href="/about.html">Next</a></li>
+        </ul>
+    </nav>
+    <section>
+        
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="testimonial">
+                        <img src="https://swiperjs.com/demos/images/nature-1.jpg" alt="Testimonial 1">
+                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit."</p>
+                        <p class="author">John Doe</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonial">
+                        <img src="https://swiperjs.com/demos/images/nature-2.jpg" alt="Testimonial 2">
+                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit."</p>
+                        <p class="author">Jane Smith</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonial">
+                        <img src="https://swiperjs.com/demos/images/nature-3.jpg" alt="Testimonial 3">
+                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit."</p>
+                        <p class="author">Michael Johnson</p>
+                    </div>
+                </div>
+                <!-- Add more testimonials as needed -->
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+    </script>
+</body>
+</html>

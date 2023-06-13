@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service</title>
+    <script src="https://kit.fontawesome.com/cc76fba736.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            width: 100%;
+            background-color: #909faa;
+        }
+        nav ul{
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+       
+        nav ul li{
+            margin: 10px;
+        }
+        nav ul li a{
+            color: #000;
+            text-decoration: none;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        nav ul li a:hover{
+            background-color: #2c677c;
+            transition: 0.4s ease;
+        }
+    
+        .title {
+            text-align: center;
+            padding-top: 50px;
+            font-size: 42px;
+        }
+    
+        .title h1::after {
+            content: "";
+            height: 4px;
+            width: 230px;
+            background-color: #000;
+            display: block;
+            margin: auto;
+        }
+    
+        .services {
+            width: 85%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 75px auto;
+            text-align: center;
+        }
+    
+        .card {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+            margin: 0px 20px;
+            padding: 10px 10px;
+            background-color: #efefef;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    
+        .card:hover {
+            background-color: #b8d4de;
+            transition: 0.4s ease;
+        }
+    
+        .card .icon {
+            font-size: 35px;
+            margin-top: 10px;
+        }
+    
+        .card h2 {
+            font-size: 28px;
+            color: #c94f4f;
+            margin: 20px;
+        }
+    
+        .card p {
+            font-size: 17px;
+            margin-bottom: 30px;
+            line-height: 1.5;
+            color: #5e5e5e;
+        }
+    
+        .button {
+            font-size: 15px;
+            text-decoration: none;
+            color: #fff;
+            background-color: #2c677c;
+            padding: 8px 12px;
+            border-radius: 5px;
+            letter-spacing: 1px;
+        }
+    
+        .button:hover {
+            background-color: #c94f4f;
+            transition: 0.4s ease;
+        }
+    
+        @media screen and (max-width: 940px) {
+            .services {
+                display: flex;
+                flex-direction: column;
+            }
+    
+            .card {
+                width: 85%;
+                display: flex;
+                margin: 20px 30px;
+            }
+        }
+    </style>
+    <head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/index.html">Preview</a></li>
+            <li><a href="/work.html">Next</a></li>
+        </ul>
+    </nav>
+    <div class="section">
+        <div class="title">
+            <h1>Our Service</h1>
+        </div>
+        <div class="services">
+            <div class="card">
+                <div class="icon">
+                    <i class="fas fa-calendar"></i>
+                </div>
+                <h2>Planing</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam explicabo hic perspiciatis iusto accusantium quasi quam ducimus consequuntur iure impedit voluptate, corporis at ratione.</p>
+                <a href="" class="button">Read More</a>
+            </div>
+
+
+            <div class="card">
+                <div class="icon">
+                    <i class="fas fa-wrench"></i>
+                </div>
+                <h2>Planing</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam explicabo hic perspiciatis iusto accusantium quasi quam ducimus consequuntur iure impedit voluptate, corporis at ratione.</p>
+                <a href="" class="button">Read More</a>
+            </div>
+
+
+            <div class="card">
+                <div class="icon">
+                    <i class="fas fa-handshake"></i>
+                </div>
+                <h2>Planing</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam explicabo hic perspiciatis iusto accusantium quasi quam ducimus consequuntur iure impedit voluptate, corporis at ratione.</p>
+                <a href="" class="button">Read More</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
